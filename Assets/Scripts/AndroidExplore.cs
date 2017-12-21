@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class AndroidExplore : MonoBehaviour
 {
 	#region Private and Protected Members
 
@@ -19,7 +19,11 @@ public class NewBehaviourScript : MonoBehaviour
 
     void Start ()
     {
-        
+        Debug.Log(Input.touchCount);
+        Debug.Log(Input.location.lastData.latitude);
+        Debug.Log(Input.location.lastData.longitude);
+        Debug.Log(Input.compass);
+       // Debug.Log(Input.);
     }
 
     void Update ()
